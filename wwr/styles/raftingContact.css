@@ -33,30 +33,40 @@ a:hover {
 
 /* Header */
 header {
-  background-color: var(--color1);
-  color: white;
-  padding: 40px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items:center;
+  padding: 20px;
+  background-color: var(--color2);
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  width: 64px;
+  height: auto;
+  margin-right: 10px;
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
   display: flex;
-  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  justify-content: right
 }
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
+nav a {
+  text-decoration: none;
+  color: #fff;
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  color: var(--color2);
+nav a:hover {
+  color: var(--color3); /* Light Yellow */
 }
 
 /* Buttons */
@@ -134,6 +144,17 @@ iframe {
   border: none;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 600%; 
+  height: 450px; 
+  border: none; 
+}
+
+.map-container {
+  border: 1px solid #ccc; 
+  overflow: hidden; 
 }
 
 /* Employee Images */
