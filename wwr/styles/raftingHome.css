@@ -1,0 +1,179 @@
+:root {
+  --color1: #3e5c57; /* Dark Green */
+  --color2: #53b5a0; /* Light Teal */
+  --color3: #d9c26f; /* Light Yellow */
+  --color4: #f7d3a1; /* Light Peach */
+  --color5: #9ba7c0; /* Light Gray */
+}
+
+/* General Styles */
+body {
+  background-color: var(--color5);
+  font-family: 'Roboto', georgia;
+  color: var(--color1);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color1);
+  margin: 20px 0;
+}
+
+a {
+  color: var(--color1);
+  text-decoration: rgb(from color r g b);
+  text-align: right;
+}
+
+a:hover {
+  color: var(--color1);
+  text-decoration: line-through;
+  text-align: right;
+  justify-content: space-between;
+}
+
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items:right;
+  padding: 10px;
+  background-color: var(--color2);
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: right
+}
+
+nav ul li a:hover {
+  color: var(--color2);
+}
+
+header .logo {
+  width: 75px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Buttons */
+button {
+  background-color: var(--color2);
+  color: white;
+  border: rgb(from color r g b);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: var(--color1);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color4);
+  color: var(--color1);
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--color1);
+}
+
+footer a:hover {
+  color: var(--color2);
+}
+
+footer .sociallinks {
+  display: flex;
+  justify-content: right; 
+  gap: 20px;
+}
+
+footer .sociallinks img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+footer .sociallinks img:hover {
+  transform: scale(1.2);
+}
+
+
+/* Trip Images */
+.trip-descriptions {
+  display: flex;
+  padding: 10px 0;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.trip-descriptions img {
+  width: 50%;
+  height: 50%;
+  border-radius: 8px;
+  padding: 1px;
+}
+
+.trip-descriptions figcaption {
+  text-align: center;
+  font-weight: bold;
+  color: var(--color1);
+}
+
+/* Section Backgrounds */
+.section-highlight {
+  background-color: var(--color3);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section-neutral {
+  background-color: var(--color4);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.full-width {
+  width: 35%;
+  height: 35%;
+  padding: auto;
+}
+
+.newsletter {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.call-to-action {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.grid-layout {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: auto;
+}
